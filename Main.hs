@@ -62,12 +62,12 @@ data Options = Options  { optSelector   :: String
 
 -- | Set default values
 defaultOptions :: Options 
-defaultOptions = Options  { optSelector = "a"
-                        , optAttribute  = "href"
-                        , optPath       = "http://example.com/"
-                        , optFile       = False
-                        , optDownload   = False
-                        }
+defaultOptions = Options  { optSelector   = "a"
+                          , optAttribute  = "href"
+                          , optPath       = "http://example.com/"
+                          , optFile       = False
+                          , optDownload   = False
+                          }
 
 options :: [OptDescr (Options -> IO Options) ]
 options =
